@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace Aluguel
 {
-    public class Locacao : ICompra
+    public class CompraLoja : ICompra
     {
 
         IEstoque estoque;
-        List<Filme> items = new List<Filme>();
-        double Total=0;
+        List<Produto> items = new List<Produto>();
+        double Total = 0;
 
 
-        public Locacao(IEstoque est)
+        public CompraLoja(IEstoque est)
         {
             this.estoque = est;
         }
 
         public void AdicionaItens(IItem i)
         {
-            items.Add((Filme)i);
+            items.Add((Produto)i);
         }
 
 
@@ -60,7 +60,7 @@ namespace Aluguel
         {
             if (valor >= Total)
             {
-                Console.WriteLine("O total de sua Compra foi de R${0}. E o pagamento foi de R${1} . Seu Troco é de {2} Real", Total, valor, (valor-Total));
+                Console.WriteLine("O total de sua Compra foi de R${0}. E o pagamento foi de R${1} . Seu Troco é de {2} Real", Total, valor, (valor - Total));
             }
             else
             {
@@ -73,7 +73,7 @@ namespace Aluguel
 
         public void RetiraItens(IItem i)
         {
-            items.Remove((Filme)i);
+            items.Remove((Produto)i);
         }
 
 

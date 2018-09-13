@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Aluguel
 {
-    public interface IItem
+    public class Produto:IItem
     {
-    
+        public double Preco { get; set; }
+        public string Descricao { get; set; }
+
     }
 }

@@ -13,6 +13,6 @@ namespace Aluguel
         IList<IItem> MinhasCompras();
         bool EstaDisponivel(IItem consulta);
         void RealizaPagamento(double valor);
-        double Efetivar(Cliente cliente);
+        double Totalizar();
     }
 }

@@ -58,12 +58,11 @@ namespace Algoritms
             IEstoque Netflix = new Locadora();
             ICompra locacao = new Locacao(Netflix);
 
-            IItem Atividade_Paranormal_1 = new Filme() { Nome = "Atividade Paranormal", Avaliacao = 10, Categoria = "B" , Preco=10};
+            IItem Atividade_Paranormal_1 = new Filme() { Nome = "Atividade Paranormal", Avaliacao = 10, Categoria = "B", Preco = 10 };
             IItem Atividade_Paranormal_2 = new Filme() { Nome = "Atividade Paranormal 2", Avaliacao = 8, Categoria = "B", Preco = 8 };
             IItem Atividade_Paranormal_3 = new Filme() { Nome = "Atividade Paranormal 3", Avaliacao = 10, Categoria = "B", Preco = 10 };
             IItem Atividade_Paranormal_4 = new Filme() { Nome = "Atividade Paranormal 4", Avaliacao = 8, Categoria = "B", Preco = 8 };
-
-
+            
             locacao.AdicionaItens(Atividade_Paranormal_1);
             locacao.AdicionaItens(Atividade_Paranormal_2);
             locacao.AdicionaItens(Atividade_Paranormal_3);
@@ -72,13 +71,31 @@ namespace Algoritms
             locacao.RetiraItens(Atividade_Paranormal_1);
 
 
-            locacao.Efetivar(clienteA);
+            locacao.Totalizar();
             locacao.RealizaPagamento(19.0);
 
 
-           
 
-                  
+            Console.WriteLine("-----------------------------------------------------------");
+
+            IEstoque estoqueCD = new BemolCentroDistribuicao();
+            ICompra minhaCompra = new CompraLoja(estoqueCD);
+
+            IItem produtoA = new Produto() { Descricao="TV LED 42' LG" , Preco =2800.50 };
+            IItem produtoB = new Produto() { Descricao = "TV LED 24' LG", Preco = 1200.50 };
+
+            minhaCompra.AdicionaItens(produtoA);
+            minhaCompra.AdicionaItens(produtoB);
+
+            minhaCompra.Totalizar();
+            minhaCompra.RealizaPagamento(5000);
+
+
+
+
+
+
+
 
 
 
