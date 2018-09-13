@@ -8,3 +8,13 @@ c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1
 c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\POO-Classificacao.pdb
 C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Aluguel.dll
 C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Aluguel.pdb
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\Aluguel.dll
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\POO-Classificacao.dll
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\Aluguel.pdb
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\bin\Debug\POO-Classificacao.pdb
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\obj\Debug\Algoritmos.csprojResolveAssemblyReference.cache
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

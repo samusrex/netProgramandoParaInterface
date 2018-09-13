@@ -73,10 +73,15 @@ namespace Algoritms
             //Adiciona se Houver em estoque           
             locacao.AdicionaItens(Atividade_Paranormal_1);
             locacao.AdicionaItens(Atividade_Paranormal_2);
-          
-            //Retira um filme
-            //locacao.RetiraItens(Atividade_Paranormal_1);
 
+            //Retira um filme
+            locacao.RetiraItens(Atividade_Paranormal_1);
+
+            foreach (Filme item in locacao.MinhasCompras()) {
+               
+                Console.WriteLine("Seus Filmes: {0}", item.Nome);
+            }
+            
 
             locacao.Totalizar();
             locacao.RealizaPagamento(19.0);
@@ -100,6 +105,12 @@ namespace Algoritms
      
             minhaCompra.AdicionaItens(produtoA);
             minhaCompra.AdicionaItens(produtoB);
+
+            foreach(Produto item in minhaCompra.MinhasCompras()) {
+
+                Console.WriteLine("Seus produtos: {0}", item.Descricao);
+            }
+
 
             minhaCompra.Totalizar();
             minhaCompra.RealizaPagamento(5000);

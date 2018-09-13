@@ -3,3 +3,7 @@ C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\ConsoleApp1\Aluguel\bin
 C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\ConsoleApp1\Aluguel\obj\Debug\Aluguel.csprojResolveAssemblyReference.cache
 C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\ConsoleApp1\Aluguel\obj\Debug\Aluguel.dll
 C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\ConsoleApp1\Aluguel\obj\Debug\Aluguel.pdb
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\Aluguel\bin\Debug\Aluguel.dll
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\Aluguel\bin\Debug\Aluguel.pdb
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\Aluguel\obj\Debug\Aluguel.dll
+C:\Users\hmendonca\Documents\Visual Studio 2017\Projects\Projetos-GIT\netProgramandoParaInterface\Aluguel\obj\Debug\Aluguel.pdb

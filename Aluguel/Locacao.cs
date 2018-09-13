@@ -35,8 +35,7 @@ namespace Aluguel
 
 
         }
-
-
+        
         public double Totalizar()
         {
 
