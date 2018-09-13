@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmos", "ConsoleApp1\Algoritmos.csproj", "{3A8E49DF-AFF0-43EB-BF75-5FBD9A1FCD46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Apresentacao", "ConsoleApp1\Apresentacao.csproj", "{3A8E49DF-AFF0-43EB-BF75-5FBD9A1FCD46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POO-Classificacao", "POO-Classificacao\POO-Classificacao.csproj", "{F7BAE5CF-F383-4EC0-ACDA-58CE5C1AE6AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exemplos", "POO-Classificacao\Exemplos.csproj", "{F7BAE5CF-F383-4EC0-ACDA-58CE5C1AE6AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aluguel", "Aluguel\Aluguel.csproj", "{46CB074E-4268-4CF0-869C-85CE0E8827DB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Compra_e_Estoque", "Aluguel\Compra_e_Estoque.csproj", "{46CB074E-4268-4CF0-869C-85CE0E8827DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

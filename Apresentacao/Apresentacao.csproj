@@ -50,13 +50,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Aluguel\Aluguel.csproj">
+    <ProjectReference Include="..\Aluguel\Compra_e_Estoque.csproj">
       <Project>{46cb074e-4268-4cf0-869c-85ce0e8827db}</Project>
-      <Name>Aluguel</Name>
+      <Name>Compra_e_Estoque</Name>
     </ProjectReference>
-    <ProjectReference Include="..\POO-Classificacao\POO-Classificacao.csproj">
+    <ProjectReference Include="..\POO-Classificacao\Exemplos.csproj">
       <Project>{f7bae5cf-f383-4ec0-acda-58ce5c1ae6af}</Project>
-      <Name>POO-Classificacao</Name>
+      <Name>Exemplos</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
