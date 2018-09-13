@@ -41,9 +41,9 @@ namespace Aluguel
 
         public void Adicione(IItem i)
         {
-            Produto novoFilme = (Produto)i;
-            novoFilme.SetQtde(novoFilme.GetQtde() + 1);
-            this.Produtos.Add(novoFilme);
+            Produto novoProduto = (Produto)i;
+            novoProduto.SetQtde(novoProduto.GetQtde() + 1);
+            this.Produtos.Add(novoProduto);
         }
 
         public void Exclua(IItem i)
