@@ -1,0 +1,5 @@
+c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\POO-Classificacao\bin\Debug\POO-Classificacao.dll
+c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\POO-Classificacao\bin\Debug\POO-Classificacao.pdb
+c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\POO-Classificacao\obj\Debug\POO-Classificacao.csprojResolveAssemblyReference.cache
+c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\POO-Classificacao\obj\Debug\POO-Classificacao.dll
+c:\users\hmendonca\documents\visual studio 2017\Projects\ConsoleApp1\POO-Classificacao\obj\Debug\POO-Classificacao.pdb
