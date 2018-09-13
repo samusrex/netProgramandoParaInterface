@@ -9,8 +9,9 @@ namespace Aluguel
     public class CompraLoja : ICompra
     {
 
+
         IEstoque estoque;
-        List<Produto> items = new List<Produto>();
+        List<Produto> Produtos = new List<Produto>();
         double Total = 0;
 
 
@@ -21,14 +22,26 @@ namespace Aluguel
 
         public void AdicionaItens(IItem i)
         {
-            items.Add((Produto)i);
+            Produto ProdutoAdiciona = (Produto)i;
+
+            if (EstaDisponivel(i))
+            {
+                Produtos.Add(ProdutoAdiciona);
+            }
+            else
+            {
+                Console.WriteLine("Filme Indisponível");
+
+            }
+
+
         }
 
 
         public double Totalizar()
         {
 
-            foreach (var item in items)
+            foreach (var item in Produtos)
             {
 
                 Total += item.Preco;
@@ -53,7 +66,7 @@ namespace Aluguel
 
         public IList<IItem> MinhasCompras()
         {
-            return this.items.ToList<IItem>();
+            return this.Produtos.ToList<IItem>();
         }
 
         public void RealizaPagamento(double valor)
@@ -73,7 +86,7 @@ namespace Aluguel
 
         public void RetiraItens(IItem i)
         {
-            items.Remove((Produto)i);
+            Produtos.Remove((Produto)i);
         }
 
 

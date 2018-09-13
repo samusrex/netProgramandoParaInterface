@@ -8,19 +8,47 @@ namespace Aluguel
 {
     public class BemolCentroDistribuicao : IEstoque
     {
-        public int Conte(IItem item)
-        {
-            return new int();
-        }
+        List<Produto> Produtos = new List<Produto>();
 
         public void Retire(IItem i)
         {
-            Console.WriteLine("Produto Retirado {0}", i);
+            Produto retorno = (Produto)i;
+            Produto encontrado = Produtos.Find(c => c.Descricao.Equals(retorno.Descricao));
+
+            if (retorno.GetQtde() != 0)
+            {
+                retorno.SetQtde(retorno.GetQtde() - 1);
+            }
+
+
         }
 
-        public void Retorne(IItem i)
+        public int Conte(IItem item)
         {
-            Console.WriteLine("Produto Retornou ao Estoque {0}",i);
+            Produto retorno = (Produto)item;
+            Produto encontrado = Produtos.Find(c => c.Descricao.Equals(retorno.Descricao));
+            return retorno.GetQtde();
+        }
+
+        public void Retorne(IItem i, int qtde)
+        {
+            Produto retorno = (Produto)i;
+            Produto encontrado = Produtos.Find(c => c.Descricao.Equals(retorno.Descricao));
+            retorno.SetQtde(retorno.GetQtde() + qtde);
+            Console.WriteLine("Adicionado ao Produto {0} a quantidade de {1}", retorno.Descricao, qtde);
+
+        }
+
+        public void Adicione(IItem i)
+        {
+            Produto novoFilme = (Produto)i;
+            novoFilme.SetQtde(novoFilme.GetQtde() + 1);
+            this.Produtos.Add(novoFilme);
+        }
+
+        public void Exclua(IItem i)
+        {
+            this.Produtos.Remove((Produto)i);
         }
     }
 }

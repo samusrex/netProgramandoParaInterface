@@ -11,5 +11,17 @@ namespace Aluguel
         public double Preco { get; set; }
         public string Descricao { get; set; }
 
+        private int qtde;
+
+        public int GetQtde()
+        {
+            return qtde;
+        }
+
+        public void SetQtde(int value)
+        {
+            qtde = value;
+        }
+
     }
 }

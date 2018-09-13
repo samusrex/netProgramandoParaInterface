@@ -8,20 +8,47 @@ namespace Aluguel
 {
     public class Locadora : IEstoque
     {
-     
-       public void Retire(IItem i)
+        List<Filme> Filmes = new List<Filme>();
+
+        public void Retire(IItem i)
         {
-            Console.WriteLine("Filme retirado {0}", new Filme());
+            Filme retorno = (Filme)i;
+            Filme encontrado = Filmes.Find(c => c.Nome.Equals(retorno.Nome));
+
+            if (retorno.GetQtde() != 0)
+            {
+                retorno.SetQtde(retorno.GetQtde() - 1);
+            }
+
+
         }
 
         public int Conte(IItem item)
         {
-            return new int();
+            Filme retorno = (Filme)item;
+            Filme encontrado = Filmes.Find(c => c.Nome.Equals(retorno.Nome));
+            return retorno.GetQtde();
         }
 
-        public void Retorne(IItem i)
+        public void Retorne(IItem i, int qtde)
         {
-            Console.WriteLine("Devolvido {0}", new Filme());
+            Filme retorno = (Filme)i;
+            Filme encontrado = Filmes.Find(c => c.Nome.Equals(retorno.Nome));
+            retorno.SetQtde(retorno.GetQtde() + qtde);
+            Console.WriteLine("Adicionado ao Produto {0} a quantidade de {1}", retorno.Nome, qtde);
+
+        }
+
+        public void Adicione(IItem i)
+        {
+            Filme novoFilme = (Filme)i;
+            novoFilme.SetQtde(novoFilme.GetQtde()+1);
+            this.Filmes.Add(novoFilme);
+        }
+
+        public void Exclua(IItem i)
+        {
+            this.Filmes.Remove((Filme)i);
         }
     }
 }

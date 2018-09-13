@@ -27,5 +27,20 @@ namespace Aluguel
         {
             throw new NotImplementedException();
         }
+
+        public void Retorne(IItem i, int qtde)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Adicione(IItem i)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Exclua(IItem i)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

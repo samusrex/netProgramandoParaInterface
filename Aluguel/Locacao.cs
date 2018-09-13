@@ -10,8 +10,8 @@ namespace Aluguel
     {
 
         IEstoque estoque;
-        List<Filme> items = new List<Filme>();
-        double Total=0;
+        List<Filme> meusFilmes = new List<Filme>();
+        double Total = 0;
 
 
         public Locacao(IEstoque est)
@@ -21,14 +21,26 @@ namespace Aluguel
 
         public void AdicionaItens(IItem i)
         {
-            items.Add((Filme)i);
+            Filme filmeAdiciona = (Filme)i;
+
+            if (EstaDisponivel(i))
+            {
+                meusFilmes.Add((Filme)i);
+            }
+            else
+            {
+                Console.WriteLine("Filme Indisponível");
+
+            }
+
+
         }
 
 
         public double Totalizar()
         {
 
-            foreach (var item in items)
+            foreach (var item in meusFilmes)
             {
 
                 Total += item.Preco;
@@ -53,14 +65,14 @@ namespace Aluguel
 
         public IList<IItem> MinhasCompras()
         {
-            return this.items.ToList<IItem>();
+            return this.meusFilmes.ToList<IItem>();
         }
 
         public void RealizaPagamento(double valor)
         {
             if (valor >= Total)
             {
-                Console.WriteLine("O total de sua Compra foi de R${0}. E o pagamento foi de R${1} . Seu Troco é de {2} Real", Total, valor, (valor-Total));
+                Console.WriteLine("O total de sua Compra foi de R${0}. E o pagamento foi de R${1} . Seu Troco é de {2} Real", Total, valor, (valor - Total));
             }
             else
             {
@@ -73,7 +85,7 @@ namespace Aluguel
 
         public void RetiraItens(IItem i)
         {
-            items.Remove((Filme)i);
+            meusFilmes.Remove((Filme)i);
         }
 
 
